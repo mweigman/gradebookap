@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradebook</title>
+</head>
+<body>
+
+<!--You will be creating a gradebook application. Create a form for entering a student's grade. It will have the following fields:-->
+
+<!--first name-->
+<!--last name-->
+<!--points earned-->
+<!--points possible-->
+<!--When the form is submitted, create an object that contains the data. Then, use the object's properties to output the following:-->
+
+<!--first name-->
+<!--last name-->
+<!--percentage <&#45;&#45; calculated from points earned / points possible-->
+<!--letter grade <&#45;&#45; A, B, C, etc. based on percent-->
+
+<header>
+    <h1>Class 13 Lab</h1>
+</header>
+
+
+<form>
+    <div>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName">
+    </div>
+    <div>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName">
+    </div>
+    <div>
+    <label for="pointsEarned">Points Earned</label>
+    <input type="number" id="pointsEarned" name="pointsEarned">
+    </div>
+    <div>
+    <label for="pointsPossible">Points Possible</label>
+    <input type="number" id="pointsPossible" name="pointsPossible">
+    </div>
+    <br>
+    <div>
+    <button id="submit" type="submit">Submit</button>
+    </div>
+</form>
+
+<p id="resultsOutput"></p>
+<p id="letterOutput"></p>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<script src="gradebook.js"></script>
+</body>
+</html>
